@@ -4,28 +4,30 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<title> HTML Feedback form</title>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div>
-		<form action="" method="post">
-		<label for="name">Name</label>	
-	<input type="text"	id="name" min="3" max="50" placeholder = "manasa" required>
+	<h2>Feedback form</h2>
+	
+		<form action="" method="POST">
+		<label for="name">Name:</label>	
+	<input type="text"	id="name" name="Name" minlength="3" maxlength="50" placeholder = "manasa" required>
 		<br>	
-			<label for="name">Protofolio</label>	
-	<input type="url"	id="portfolio" required>
+			<label for="name">Protofolio:</label>	
+	<input type="url"	id="portfolio" name="portfolio" required>
 		<br>
-			<label for="color">FavoriteColor</label>
-	<input type="color" id="favColor" required>
+			<label for="color">FavoriteColor:</label>
+	<input type="color" id="favColor" name="FavColor" required>
 		<br>	
 			<label for="likeness">Likeness</label>
-	<input type="range" id="likeness" min="1" max="100" required>
+	<input type="range" id="likeness" name="likeness" min="1" max="100" required>
 			<br>	
-	
+	<input type="submit" value="Submit">
 		
 		</form>
-	</div>
+
     <script type="text/javascript" src="./script.js">
 </script>
 
